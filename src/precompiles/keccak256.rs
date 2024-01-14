@@ -256,9 +256,9 @@ struct Keccak256VarCore {
     state: Keccak256InnerState,
 }
 
-static_assertions::assert_eq_size!(Keccak256, CoreWrapper);
+static_assertions::assert_eq_size!(sha3::Keccak256, CoreWrapper);
 
-pub fn transmute_state(reference_state: Keccak256) -> Keccak256InnerState {
+pub fn transmute_state(reference_state: sha3::Keccak256) -> Keccak256InnerState {
     // we use a trick that size of both structures is the same, and even though we do not know a stable field layout,
     // we can replicate it
     let our_wrapper: CoreWrapper = unsafe { std::mem::transmute(reference_state) };
