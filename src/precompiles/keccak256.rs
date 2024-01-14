@@ -16,7 +16,7 @@ pub const BUFFER_SIZE: usize = NEW_WORDS_PER_CYCLE + KECCAK_RATE_IN_U64_WORDS - 
 
 // static_assertions::const_assert!(BUFFER_SIZE - NEW_WORDS_PER_CYCLE >= KECCAK_RATE_IN_U64_WORDS);
 
-use sha3::*;
+pub use sha3::*;
 
 #[derive(Clone, Debug, PartialEq, Eq, Hash)]
 pub struct Keccak256RoundWitness {
