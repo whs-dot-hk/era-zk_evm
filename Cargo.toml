@@ -11,7 +11,7 @@ serde = { version = "1", features = ["derive"] }
 serde_json = "1.0"
 num = { version = "0.4"}
 static_assertions = "1"
-zkevm_opcode_defs = { git = "https://github.com/whs-dot-hk/era-zkevm_opcode_defs.git", branch = "test" }
+zkevm_opcode_defs = { git = "https://github.com/matter-labs/era-zkevm_opcode_defs.git", branch = "v1.3.2" }
 # zkevm_opcode_defs = {path = "../zkevm_opcode_defs"}
 lazy_static = "1.4"
 sha3 = "0.10.8"
