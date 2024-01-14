@@ -254,6 +254,7 @@ struct CoreWrapper {
 
 struct Keccak256VarCore {
     state: Keccak256InnerState,
+    _round_count: usize,
 }
 
 static_assertions::assert_eq_size!(sha3::Keccak256, CoreWrapper);
