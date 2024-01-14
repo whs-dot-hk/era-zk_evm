@@ -14,7 +14,7 @@ static_assertions = "1"
 zkevm_opcode_defs = { git = "https://github.com/whs-dot-hk/era-zkevm_opcode_defs.git", branch = "test" }
 # zkevm_opcode_defs = {path = "../zkevm_opcode_defs"}
 lazy_static = "1.4"
-sha3 = "1.10.8"
+sha3 = "0.10.8"
 
 [dev-dependencies]
 hex = "0.4"
